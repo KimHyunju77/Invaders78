@@ -1,8 +1,5 @@
 {
   "language": "java",
-  "os": [
-      "linux"
-  ],
   "dist": "xenial",
   "jdk": [
       "15"
