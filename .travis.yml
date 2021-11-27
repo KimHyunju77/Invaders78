@@ -1,14 +1,28 @@
-language: java
-jdk:
-  - 15
-
-cache:
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
-script: "./gradlew clean build"
-
-notifications:
-  email:
-    recipients:
-      - mollykelly@hanyang.ac.kr
+{
+  "language": "java",
+  "os": [
+      "linux"
+  ],
+  "dist": "xenial",
+  "jdk": [
+      "15"
+  ],
+  "cache": {
+    "directories": [
+        "$HOME/.m2/repository",
+        "$HOME/.gradle"
+    ]
+  },
+  "script": [
+      "./gradlew clean build"
+  ],
+  "notifications": {
+    "email": [
+      {
+        "recipients": [
+            "mollykelly@hanyang.ac.kr"
+        ]
+      }
+    ]
+  }
+}
