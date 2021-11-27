@@ -3,7 +3,7 @@ arch: amd64
 language: java
 
 jdk:
-  - oraclejdk15
+  - 'jdk-15.0.1'
 
 cache:
   directories:
