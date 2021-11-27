@@ -1,13 +1,20 @@
 language: java
+
 jdk:
-  - "15"
+  - oraclejdk15
 
 cache:
   directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
-script: "make test"
+    - $HOME/.m2
 
+script:
+  - java --version
+  - ./mvnw clean install
+  - ./mvnw test
+
+branches:
+  only:
+    - master
 notifications:
   email:
     recipients:
